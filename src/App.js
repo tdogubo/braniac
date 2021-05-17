@@ -8,22 +8,41 @@ import './App.css';
  
 const particlesOption= {
   particles: {
-    line_linked: {
-      shadow: {
-        enable: true,
-        color: "#3CA9D1",
-        blur: 5
+    number: {
+      value: 250,
+      enable: true,
+      value_area: 800
+    },
+    color: {
+      value:'#cd2657',
+    },
+    stroke: {
+      width: 5,
+      color : '#f7f71f',
+    },
+    image:{
+      type: 'polygon'
+    },
+    size:{
+      anim:{
+      enable: true,
+      speed :5
       }
+    },
+    move:{
+      enable: true
     }
   }
+ 
 }
+
 
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <Particles params= {particlesOption}/>
+        <Particles className='particle' params= {particlesOption}/>
         <Navigation/>
         <Logo/>
         <Rank />
