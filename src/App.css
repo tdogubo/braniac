@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.fix{
+  position: absolute;
+  z-index: 1;
+}
+
+.abs-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .center {
   display: flex;
   justify-content: center;

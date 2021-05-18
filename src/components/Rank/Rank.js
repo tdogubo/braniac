@@ -2,11 +2,11 @@ import React from 'react';
 
 const Rank = () => {
     return(
-        <div>
-            <div className='white f3'>
+        <div className='fix abs-center' style={{top:'200px'}}>
+            <div className='navy b f3'>
             {'Your rank is... '}
             </div>
-            <div className='white f1'>
+            <div className='washed-blue f1'>
             {'#5'}
             </div>
         </div>
